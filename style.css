@@ -1,48 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 body {
-  background-color: #333;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #000;
+  color: #eee;
 }
-
-.output {
-  text-align: center;
-  font-family: "Source Code Pro", monospace;
-  color: white;
+.container {
+  height: 100vh;
+  display: flex;
 }
-.output h6 {
-  font-size: 30px;
+.container p {
+  font-size: 10px;
+  padding: 0.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  overflow: hidden;
 }
-
-/* Cursor Styling */
-.cursor::after {
-  content: "";
+.container p span.typed-text {
+  font-weight: normal;
+  color: #dd7732;
+}
+.container p span.cursor {
   display: inline-block;
-  margin-left: 3px;
-  background-color: white;
-  animation-name: blink;
-  animation-duration: 0.5s;
-  animation-iteration-count: infinite;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
 }
-
-h6.cursor::after {
-  height: 24px;
-  width: 13px;
+.container p span.cursor.typing {
+  animation: none;
 }
-
-p.cursor::after {
-  height: 13px;
-  width: 6px;
-}
-
 @keyframes blink {
-  0% {
-    opacity: 1;
-  }
-  49% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
+  0%  { background-color: #ccc; }
+  49% { background-color: #ccc; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: #ccc; }
 }
